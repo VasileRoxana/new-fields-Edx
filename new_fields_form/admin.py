@@ -29,5 +29,5 @@ class ExtraFieldsAdmin(admin.ModelAdmin):
 
 
 
-admin.site.register(ExtraInfo, ExtraInfoAdmin)
+admin.site.register(ExtraFields, ExtraFieldsAdmin)
      

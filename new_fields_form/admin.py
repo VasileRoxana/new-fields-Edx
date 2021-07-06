@@ -1,11 +1,11 @@
 from django.contrib import admin
-from .models import ExtraFields
+from .models import ExtraInfo
 import csv
 from django.http import HttpResponse
 from io import StringIO
 
 
-class ExtraFieldsAdmin(admin.ModelAdmin):
+class ExtraInfoAdmin(admin.ModelAdmin):
     actions = ['download_csv'] 
     list_display = ('user', 'age', 'birth_month', 'sex', 'studies', 'job', 'expectations', 'user_environment')
     list_display_links = ('user', 'age', 'birth_month', 'sex', 'studies', 'job', 'expectations', 'user_environment',)
@@ -29,5 +29,5 @@ class ExtraFieldsAdmin(admin.ModelAdmin):
 
 
 
-admin.site.register(ExtraFields, ExtraFieldsAdmin)
+admin.site.register(ExtraInfo, ExtraInfoAdmin)
      

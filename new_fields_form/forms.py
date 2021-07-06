@@ -11,7 +11,7 @@ class ExtraInfoForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(ExtraInfoForm, self).__init__(*args, **kwargs)
         self.fields['age'].required = True
-        self.fields['birth_month'].required = True
+        self.fields['birth_month'].required = False
         self.fields['sex'].required = True
         self.fields['studies'].required = True
         self.fields['job'].required = True
